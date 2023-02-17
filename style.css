@@ -1,0 +1,52 @@
+body{
+    box-sizing: border-box;
+}
+.status{
+    justify-content: end;
+    text-align: end;
+}
+.status h6{
+    color: white;
+    /* line-height: -2%; */
+}
+.status h6 span{
+    color: lime;
+}
+#navbarDropdownMenuLink{
+    color: white;
+    text-decoration: none;
+}
+.player_activity{
+    justify-content: end;
+    padding: 10px 10px;
+}
+.player_activity :nth-child(1){
+    padding: 0px 3px;
+    color: black;
+    
+}
+.player_activity :nth-child(2){
+    padding: 0px 3px;
+}
+.player_activity :nth-child(3){
+    padding: 0px 3px;
+}
+.player_activity :nth-child(4){
+    padding: 0px 3px;
+}
+.player_activity div span {
+    font-weight: 500;
+}
+input[type="search"]{
+    border: none;
+    outline: none;
+}
+.jumbo_heading{
+    color: white;
+    padding: 6px 30px 6px 5px;
+}
+.jumbo_heading span {
+    line-height: 35px;
+    font-size: small;
+    padding-left: 5px;
+}
