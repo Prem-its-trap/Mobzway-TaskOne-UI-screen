@@ -18,6 +18,7 @@
     <script
       src="https://kit.fontawesome.com/ad033949aa.js"
       crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <title>Task One</title>
   </head>
   <body>
@@ -58,13 +59,7 @@
       </nav>
     </header>
     <main>
-      <div
-        class="jumbo"
-        style="
-          background-color: rgb(171, 234, 245);
-          height: 40vh;
-          padding: 10px 0;
-        ">
+      <div class="jumbo">
         <div class="row">
           <div class="col-sm-4">
             <div
@@ -121,14 +116,57 @@
             </div>
           </div>
         </div>
+        <br />
+
+        <div class="row">
+          <div class="col-sm-5" style="text-align: end">
+            <label for="">Show</label>
+            <select
+              class="form-select"
+              style="width: 50%; display: inline-block"
+              aria-label="Default select example">
+              <option selected>Active Player</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div
+            class="col-sm-3 align-items-center"
+            style="display: flex; justify-content: end">
+            <label for="">Sort &nbsp;</label>
+            <select
+              class="form-select"
+              style="width: 80%"
+              aria-label="Default select example">
+              <option selected>Last Login</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="formating_button">
+              <div class="buttons">
+                <button class="btn1">Asc</button>
+                <button class="btn2">Desc</button>
+              </div>
+              <div class="excel_icon">
+                <img src="excel.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <br />
       <section class="user_details_table">
-        <div class="table-responsive">
+        <div class="table-responsive" style="height: 100vh">
           <table
             class="table table-sm table-bordered"
             style="border: 1px solid black">
             <thead class="text-center">
-              <tr class="bg-primary">
+              <tr class="bg-primary" style="font-weight: bold">
                 <td><input type="checkbox" /></td>
                 <td></td>
                 <td>User Name</td>
@@ -158,7 +196,66 @@
                 <td>12.2</td>
                 <td>0.00</td>
                 <td>52casino</td>
-                <td><i class="fa-solid fa-caret-down"></i></td>
+                <td class="text-center">
+                  <ul class="nav" style="justify-content: center">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdownMenuLink"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="
+                          color: orange;
+                          font-size: 25px;
+
+                          padding: 0;
+                          margin: 0;
+                          align-items: center;
+                        ">
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="navbarDropdownMenuLink"
+                        id="table_dropdown">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen-to-square"></i> Player</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-gamepad"></i>Game Assign</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-lock"></i> Change
+                            Passoword</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-sharp fa-solid fa-stopwatch"></i>
+                            Transaction</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-file"></i> KYC Document</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-phone"></i> Linked Account</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
               </tr>
               <tr>
                 <td><input type="checkbox" /></td>
@@ -173,7 +270,67 @@
                 <td>12.2</td>
                 <td>0.00</td>
                 <td>52casino</td>
-                <td><i class="fa-solid fa-caret-down"></i></td>
+                <td class="text-center">
+                  <ul class="nav" style="justify-content: center">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="polo navbarDropdownMenuLink"
+                        value="on"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="
+                          color: orange;
+                          font-size: 25px;
+                          padding: 0;
+                          margin: 0;
+                          align-items: center;
+                        ">
+                        <!-- <i class="fa fa-bars" id="prem"></i> -->
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="navbarDropdownMenuLink"
+                        id="table_dropdown">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen-to-square"></i> Player</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-gamepad"></i>Game Assign</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-lock"></i> Change
+                            Passoword</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-sharp fa-solid fa-stopwatch"></i>
+                            Transaction</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-file"></i> KYC Document</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-phone"></i> Linked Account</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
               </tr>
               <tr>
                 <td><input type="checkbox" /></td>
@@ -188,7 +345,66 @@
                 <td>12.2</td>
                 <td>0.00</td>
                 <td>52casino</td>
-                <td><i class="fa-solid fa-caret-down"></i></td>
+                <td class="text-center">
+                  <ul class="nav" style="justify-content: center">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdownMenuLink"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="
+                          color: orange;
+                          font-size: 25px;
+
+                          padding: 0;
+                          margin: 0;
+                          align-items: center;
+                        ">
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="navbarDropdownMenuLink"
+                        id="table_dropdown">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen-to-square"></i> Player</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-gamepad"></i>Game Assign</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-lock"></i> Change
+                            Passoword</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-sharp fa-solid fa-stopwatch"></i>
+                            Transaction</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-file"></i> KYC Document</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-phone"></i> Linked Account</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
               </tr>
               <tr>
                 <td><input type="checkbox" /></td>
@@ -203,7 +419,66 @@
                 <td>12.2</td>
                 <td>0.00</td>
                 <td>52casino</td>
-                <td><i class="fa-solid fa-caret-down"></i></td>
+                <td class="text-center">
+                  <ul class="nav" style="justify-content: center">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdownMenuLink"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="
+                          color: orange;
+                          font-size: 25px;
+
+                          padding: 0;
+                          margin: 0;
+                          align-items: center;
+                        ">
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="navbarDropdownMenuLink"
+                        id="table_dropdown">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen-to-square"></i> Player</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-gamepad"></i>Game Assign</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-lock"></i> Change
+                            Passoword</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-sharp fa-solid fa-stopwatch"></i>
+                            Transaction</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-file"></i> KYC Document</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-phone"></i> Linked Account</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
               </tr>
               <tr>
                 <td><input type="checkbox" /></td>
@@ -218,7 +493,66 @@
                 <td>12.2</td>
                 <td>0.00</td>
                 <td>52casino</td>
-                <td><i class="fa-solid fa-caret-down"></i></td>
+                <td class="text-center">
+                  <ul class="nav" style="justify-content: center">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdownMenuLink"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="
+                          color: orange;
+                          font-size: 25px;
+
+                          padding: 0;
+                          margin: 0;
+                          align-items: center;
+                        ">
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="navbarDropdownMenuLink"
+                        id="table_dropdown">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen-to-square"></i> Player</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-gamepad"></i>Game Assign</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-lock"></i> Change
+                            Passoword</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-sharp fa-solid fa-stopwatch"></i>
+                            Transaction</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-file"></i> KYC Document</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-phone"></i> Linked Account</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
               </tr>
               <tr>
                 <td><input type="checkbox" /></td>
@@ -233,7 +567,66 @@
                 <td>12.2</td>
                 <td>0.00</td>
                 <td>52casino</td>
-                <td><i class="fa-solid fa-caret-down"></i></td>
+                <td class="text-center">
+                  <ul class="nav" style="justify-content: center">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdownMenuLink"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="
+                          color: orange;
+                          font-size: 25px;
+
+                          padding: 0;
+                          margin: 0;
+                          align-items: center;
+                        ">
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="navbarDropdownMenuLink"
+                        id="table_dropdown">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen-to-square"></i> Player</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-gamepad"></i>Game Assign</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-lock"></i> Change
+                            Passoword</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-sharp fa-solid fa-stopwatch"></i>
+                            Transaction</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-file"></i> KYC Document</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-phone"></i> Linked Account</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
               </tr>
               <tr>
                 <td><input type="checkbox" /></td>
@@ -248,7 +641,140 @@
                 <td>12.2</td>
                 <td>0.00</td>
                 <td>52casino</td>
-                <td><i class="fa-solid fa-caret-down"></i></td>
+                <td class="text-center">
+                  <ul class="nav" style="justify-content: center">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdownMenuLink"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="
+                          color: orange;
+                          font-size: 25px;
+
+                          padding: 0;
+                          margin: 0;
+                          align-items: center;
+                        ">
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="navbarDropdownMenuLink"
+                        id="table_dropdown">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen-to-square"></i> Player</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-gamepad"></i>Game Assign</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-lock"></i> Change
+                            Passoword</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-sharp fa-solid fa-stopwatch"></i>
+                            Transaction</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-file"></i> KYC Document</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-phone"></i> Linked Account</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" /></td>
+                <td><i class="fa-solid fa-circle-check"></i></td>
+                <td>Player08</td>
+                <td>123456789</td>
+                <td>12-27-2019 11:21:49</td>
+                <td>new Agent</td>
+                <td>12-27-2019 11:21:49</td>
+                <td>yo@yo.com</td>
+                <td>100000</td>
+                <td>12.2</td>
+                <td>0.00</td>
+                <td>52casino</td>
+                <td class="text-center">
+                  <ul class="nav" style="justify-content: center">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdownMenuLink"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="
+                          color: orange;
+                          font-size: 25px;
+
+                          padding: 0;
+                          margin: 0;
+                          align-items: center;
+                        ">
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="navbarDropdownMenuLink"
+                        id="table_dropdown">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-pen-to-square"></i> Player</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-gamepad"></i>Game Assign</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-lock"></i> Change
+                            Passoword</a
+                          >
+                        </li>
+
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-sharp fa-solid fa-stopwatch"></i>
+                            Transaction</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-file"></i> KYC Document</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            ><i class="fa-solid fa-phone"></i> Linked Account</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </td>
               </tr>
             </tbody>
           </table>
