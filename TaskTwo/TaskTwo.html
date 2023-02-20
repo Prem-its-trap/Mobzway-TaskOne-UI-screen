@@ -4,7 +4,131 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+
     <title>Task Two</title>
   </head>
-  <body></body>
+  <body>
+    <div class="row">
+      <div class="d-flex align-items-start">
+        <div
+          class="nav flex-column nav-pills me-3"
+          id="v-pills-tab"
+          role="tablist"
+          aria-orientation="vertical"
+          style="
+            background-color: rebeccapurple;
+            height: 100vh;
+            padding: 10px 50px;
+          ">
+          <div class="user_details_container" style="padding: 50px 0">
+            <div class="logo">
+              <h1>Fatou</h1>
+              <hr width="100%" />
+            </div>
+            <div class="profile_image">
+              <img src="" alt="" />
+            </div>
+            <div class="user_details">
+              <h3>Prem Bhati</h3>
+              <span>Senior Developer</span>
+              <span>Address</span>
+            </div>
+          </div>
+
+          <button
+            class="nav-link active"
+            id="v-pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-home"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-home"
+            aria-selected="true">
+            Home
+          </button>
+          <button
+            class="nav-link"
+            id="v-pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-profile"
+            aria-selected="false">
+            Profile
+          </button>
+          <button
+            class="nav-link"
+            id="v-pills-messages-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-messages"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-messages"
+            aria-selected="false">
+            Messages
+          </button>
+          <button
+            class="nav-link"
+            id="v-pills-settings-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#v-pills-settings"
+            type="button"
+            role="tab"
+            aria-controls="v-pills-settings"
+            aria-selected="false">
+            Settings
+          </button>
+        </div>
+        <div class="tab-content" id="v-pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="v-pills-home"
+            role="tabpanel"
+            aria-labelledby="v-pills-home-tab">
+            ...
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-profile"
+            role="tabpanel"
+            aria-labelledby="v-pills-profile-tab">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+            excepturi laborum quas deserunt tempora eligendi quos temporibus
+            quasi animi libero, alias voluptatum reprehenderit aut? Voluptatem
+            minus neque quia delectus quidem.
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-messages"
+            role="tabpanel"
+            aria-labelledby="v-pills-messages-tab">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
+            odio maiores magnam. Deserunt soluta facilis quas optio, distinctio
+            numquam dignissimos nulla explicabo aut porro, fugit rerum labore
+            accusamus, assumenda dolor.
+          </div>
+          <div
+            class="tab-pane fade"
+            id="v-pills-settings"
+            role="tabpanel"
+            aria-labelledby="v-pills-settings-tab">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
+            debitis exercitationem optio ut numquam ipsam dignissimos obcaecati
+            culpa distinctio voluptatibus odio cumque repellendus voluptatem
+            consequatur facilis, dolore eius sunt quasi?
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
