@@ -14,114 +14,374 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"></script>
 
+    <script
+      src="https://kit.fontawesome.com/ad033949aa.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+
     <title>Task Two</title>
   </head>
   <body>
-    <div class="row">
-      <div class="d-flex align-items-start">
-        <div
-          class="nav flex-column nav-pills me-3"
-          id="v-pills-tab"
-          role="tablist"
-          aria-orientation="vertical"
-          style="
-            background-color: rebeccapurple;
-            height: 100vh;
-            padding: 10px 50px;
-          ">
-          <div class="user_details_container" style="padding: 50px 0">
-            <div class="logo">
-              <h1>Fatou</h1>
-              <hr width="100%" />
-            </div>
-            <div class="profile_image">
-              <img src="" alt="" />
-            </div>
-            <div class="user_details">
-              <h3>Prem Bhati</h3>
-              <span>Senior Developer</span>
-              <span>Address</span>
-            </div>
+    <div class="d-flex align-items-start">
+      <div
+        class="nav flex-column nav-pills me-3 left_bar"
+        id="v-pills-tab"
+        role="tablist"
+        aria-orientation="vertical">
+        <div class="user_details_container">
+          <div class="logo">
+            <h1>Fatou</h1>
+            <hr width="100%" style="line-height: -10px" />
           </div>
-
-          <button
-            class="nav-link active"
-            id="v-pills-home-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#v-pills-home"
-            type="button"
-            role="tab"
-            aria-controls="v-pills-home"
-            aria-selected="true">
-            Home
-          </button>
-          <button
-            class="nav-link"
-            id="v-pills-profile-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#v-pills-profile"
-            type="button"
-            role="tab"
-            aria-controls="v-pills-profile"
-            aria-selected="false">
-            Profile
-          </button>
-          <button
-            class="nav-link"
-            id="v-pills-messages-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#v-pills-messages"
-            type="button"
-            role="tab"
-            aria-controls="v-pills-messages"
-            aria-selected="false">
-            Messages
-          </button>
-          <button
-            class="nav-link"
-            id="v-pills-settings-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#v-pills-settings"
-            type="button"
-            role="tab"
-            aria-controls="v-pills-settings"
-            aria-selected="false">
-            Settings
-          </button>
+          <div class="profile_image text-center">
+            <img
+              src="img.jpg"
+              alt=""
+              class="img-fluid rounded mx-auto d-block"
+              height="100"
+              width="100" />
+          </div>
+          <div class="user_details text-center">
+            <h3>Prem Bhati</h3>
+            <span class="user_designation">Senior Developer</span><br />
+            <span>Amazon</span><br />
+            <span class="address">Jaipur,Rajasthan</span>
+          </div>
         </div>
-        <div class="tab-content" id="v-pills-tabContent">
-          <div
-            class="tab-pane fade show active"
-            id="v-pills-home"
-            role="tabpanel"
-            aria-labelledby="v-pills-home-tab">
-            ...
+
+        <button
+          class="nav-link active"
+          id="v-pills-home-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#v-pills-home"
+          type="button"
+          role="tab"
+          aria-controls="v-pills-home"
+          aria-selected="true">
+          <i class="fa-regular fa-address-card"></i>
+          &nbsp;&nbsp;&nbsp;&nbsp;Post Job
+        </button>
+        <button
+          class="nav-link"
+          id="v-pills-profile-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#v-pills-profile"
+          type="button"
+          role="tab"
+          aria-controls="v-pills-profile"
+          aria-selected="false">
+          <i class="fa-solid fa-briefcase"></i>
+          &nbsp;&nbsp; My Progress
+        </button>
+        <button
+          class="nav-link"
+          id="v-pills-messages-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#v-pills-messages"
+          type="button"
+          role="tab"
+          aria-controls="v-pills-messages"
+          aria-selected="false">
+          <i class="fa-solid fa-chart-simple"></i>
+          &nbsp;&nbsp; Match Analysis
+        </button>
+        <button
+          class="nav-link"
+          id="v-pills-settings-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#v-pills-settings"
+          type="button"
+          role="tab"
+          aria-controls="v-pills-settings"
+          aria-selected="false">
+          <i class="fa-solid fa-gear"></i>
+          &nbsp;&nbsp; Settings
+        </button>
+      </div>
+      <div class="tab-content" id="v-pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="v-pills-home"
+          role="tabpanel"
+          aria-labelledby="v-pills-home-tab">
+          <div class="container align-items-center" style="padding: 15px 20px">
+            <div class="row" style="border-bottom: 1px solid grey">
+              <div class="col-lg-5">
+                <div class="jumbo_heading" style="display: flex">
+                  <h5
+                    style="
+                      color: rebeccapurple;
+                      font-weight: bold;
+                      letter-spacing: 0.1rem;
+                    ">
+                    Applicant Profile
+                  </h5>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="" style="display: flex">
+                  <input
+                    type="search"
+                    class=""
+                    placeholder="Search Text"
+                    style="border-radius: none !important; width: 100%" />
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    style="border-radius: 0 5px 5px 0">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="player_activity">
+                  <div class="header_profile_image">
+                    <img src="img.jpg" height="40" width="40" alt="" />
+                  </div>
+                  <i class="fa-2x fa-solid fa-envelope position-relative">
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                      style="font-size: 8px">
+                      99
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </i>
+                  <i class="fa-2x fa-solid fa-envelope position-relative">
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                      style="font-size: 8px">
+                      99
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </i>
+                  <i class="fa-2x fa-solid fa-envelope position-relative">
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                      style="font-size: 8px">
+                      99
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </i>
+                </div>
+              </div>
+            </div>
           </div>
-          <div
-            class="tab-pane fade"
-            id="v-pills-profile"
-            role="tabpanel"
-            aria-labelledby="v-pills-profile-tab">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
-            excepturi laborum quas deserunt tempora eligendi quos temporibus
-            quasi animi libero, alias voluptatum reprehenderit aut? Voluptatem
-            minus neque quia delectus quidem.
+          <div class="container go_back">
+            <a href="#"> &lt; Go Back</a>
           </div>
-          <div
-            class="tab-pane fade"
-            id="v-pills-messages"
-            role="tabpanel"
-            aria-labelledby="v-pills-messages-tab">
+          <div class="container" style="display: flexbox; flex-wrap: wrap">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Matchability</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                    <h5 class="card-subtitle mb-2 text-muted">
+                      Years of Experience: 4
+                    </h5>
+                    <br />
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      Required Skills
+                    </h6>
+                    <div class="card_button">
+                      <button>UX Design</button>
+                      <button>UX Design</button>
+                    </div>
+                    <!-- <br /> -->
+                    <div class="card_button">
+                      <button>UX Design</button>
+                      <button>UX Design</button>
+                    </div>
+                    <!-- <br /> -->
+                    <div class="card_button">
+                      <button>UX Design</button>
+                      <button>UX Design</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="card" style="">
+                  <div class="card-body">
+                    <h5 class="card-title">Culture Fit</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+
+                    <div class="card_button">
+                      <button>Diversity</button>
+                      <button>Growth</button>
+                    </div>
+                    <!-- <br /> -->
+                    <div class="card_button">
+                      <button>Equality</button>
+                      <button>Team</button>
+                    </div>
+                    <!-- <br /> -->
+                    <div class="card_button">
+                      <button>Remote Friend</button>
+                      <button>Benifits</button>
+                    </div>
+                    <div class="card_button">
+                      <button>Innovation</button>
+                      <button>Leadership</button>
+                    </div>
+                    <div class="card_button">
+                      <button>Power-Driven</button>
+                      <button>Mission</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      <i class="fa-rebica fa-solid fa-graduation-cap"></i>Job
+                      Details
+                    </h6>
+                    <div class="main_container">
+                      <div class="job_detail_container">
+                        <span class="job_details"> Employment Type: </span>
+                        <span class="job_details_info"> Permanent </span>
+                      </div>
+                      <div class="job_detail_container">
+                        <span class="job_details"> Manager: </span>
+                        <span class="job_details_info"> Alison Moseph </span>
+                      </div>
+                      <div class="job_detail_container">
+                        <span class="job_details">Joining Date:</span>
+                        <span class="job_details_info">24th March 2020 </span>
+                      </div>
+                      <div class="job_detail_container">
+                        <span class="job_details">Email: </span>
+                        <span class="job_details_info">gfesw@sgfb.com </span>
+                      </div>
+                    </div>
+                    <br />
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      <i class="fa-rebica fa-solid fa-user"></i>
+                      Personal Information
+                    </h6>
+                    <div class="main_container_personal">
+                      <div class="job_detail_container">
+                        <span class="job_details"> Birth Date: </span>
+                        <span class="job_details_info"> March 17, 1984 </span>
+                      </div>
+                      <div class="job_detail_container">
+                        <span class="job_details"> Gender: </span>
+                        <span class="job_details_info"> Male </span>
+                      </div>
+                      <div class="job_detail_container">
+                        <span class="job_details">Nationality:</span>
+                        <span class="job_details_info">Indian </span>
+                      </div>
+                      <div class="job_detail_container">
+                        <span class="job_details">Marital Status: </span>
+                        <span class="job_details_info">Single </span>
+                      </div>
+                      <div class="job_detail_container">
+                        <span class="job_details">DL Number: </span>
+                        <span class="job_details_info">012356789 </span>
+                      </div>
+                      <div class="job_detail_container">
+                        <span class="job_details">Other Id: </span>
+                        <span class="job_details_info">965-85-5236 </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="card" style="width: 16rem">
+                  <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">
+                      <i class="fa-rebica fa-solid fa-graduation-cap"></i>
+                      &nbsp;Job Details
+                    </h6>
+                    <div class="last-card_job_details">
+                      <div style="display: flex; align-items: center">
+                        <i class="fa-1x fa-solid fa-circle"></i>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <h6>Sr. Interior Designer</h6>
+                      </div>
+                      <div class="inner_div_last_card">
+                        <span class="job_details_first">Magma Pvt.Ltd.</span>
+                        <span class="job_details">Jan 2020 - Mar 2013.</span>
+                        <span class="job_details">3 Years 3 Month</span>
+                      </div>
+                    </div>
+                    <div class="last-card_job_details">
+                      <div style="display: flex; align-items: center">
+                        <i class="fa-1x fa-solid fa-circle"></i>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <h6>Sr. Interior Designer</h6>
+                      </div>
+                      <div class="inner_div_last_card">
+                        <span class="job_details_first">Magma Pvt.Ltd.</span>
+                        <span class="job_details">Jan 2020 - Mar 2013.</span>
+                        <span class="job_details">3 Years 3 Month</span>
+                      </div>
+                    </div>
+                    <div class="last-card_job_details">
+                      <div style="display: flex; align-items: center">
+                        <i class="fa-1x fa-solid fa-circle"></i>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <h6>Sr. Interior Designer</h6>
+                      </div>
+                      <div class="inner_div_last_card">
+                        <span class="job_details_first">Magma Pvt.Ltd.</span>
+                        <span class="job_details">Jan 2020 - Mar 2013.</span>
+                        <span class="job_details">3 Years 3 Month</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container button_container">
+            <button class="bottom_buttons">Request Interview</button>
+            <button class="bottom_buttons">Reject</button>
+            <button class="bottom_buttons">Send Message</button>
+            <button class="bottom_buttons">Save</button>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="v-pills-profile"
+          role="tabpanel"
+          aria-labelledby="v-pills-profile-tab">
+          <div class="" style="border: 1px solid red; width: 100%">
+            <div class="row">
+              <div class="col-sm-4">hello</div>
+              <div class="col-sm-4">hello</div>
+              <div class="col-sm-4">hello</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="v-pills-messages"
+          role="tabpanel"
+          aria-labelledby="v-pills-messages-tab">
+          <div class="container">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
             odio maiores magnam. Deserunt soluta facilis quas optio, distinctio
             numquam dignissimos nulla explicabo aut porro, fugit rerum labore
             accusamus, assumenda dolor.
           </div>
-          <div
-            class="tab-pane fade"
-            id="v-pills-settings"
-            role="tabpanel"
-            aria-labelledby="v-pills-settings-tab">
+        </div>
+        <div
+          class="tab-pane fade"
+          id="v-pills-settings"
+          role="tabpanel"
+          aria-labelledby="v-pills-settings-tab">
+          <div class="container">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
             debitis exercitationem optio ut numquam ipsam dignissimos obcaecati
             culpa distinctio voluptatibus odio cumque repellendus voluptatem
